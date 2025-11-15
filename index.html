@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Engineer Portfolio - Sasaank Aalla">
+    <title>Sasaank Aalla - AI Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Sasaank Aalla</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Sasaank Aalla</span></h1>
+                <h2 class="hero-subtitle">AI Engineer</h2>
+                <p class="hero-description">
+                    Specializing in Machine Learning and Deep Learning.
+                    Passionate about building scalable AI systems for real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="Sasaank_Aalla_Resume.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm an AI Engineer with expertise in developing and deploying machine learning models
+                        that solve complex real-world problems. My work spans across various domains including
+                        computer vision, natural language processing, and predictive analytics.
+                    </p>
+                    <p>
+                        With a strong foundation in mathematics and computer science, I focus on building
+                        robust, scalable AI solutions. I'm particularly interested in deep learning architectures,
+                        model optimization, and deploying AI systems in production environments.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring the latest research papers,
+                        contributing to open-source projects, or participating in AI competitions on platforms
+                        like Kaggle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> ML/DL Frameworks</h3>
+                    <ul>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Keras</li>
+                        <li>Scikit-Learn</li>
+                        <li>OpenCV</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI Techniques</h3>
+                    <ul>
+                        <li>Supervised Learning</li>
+                        <li>Unsupervised Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Reinforcement Learning</li>
+                        <li>Natural Language Processing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>Jupyter Notebooks</li>
+                        <li>AWS/GCP</li>
+                        <li>MLflow</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="dl">Deep Learning</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="deployment">Deployment</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: Image Classification -->
+                <div class="project-card" data-category="dl">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-image fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Image Classification with CNN</h3>
+                        <p class="project-description">
+                            Built a Convolutional Neural Network to classify images from the CIFAR-10 dataset
+                            with 85% accuracy on the test set.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-chart-line"></i> 85% Accuracy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project1" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: House Price Prediction -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-home fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Predictive Analytics for House Prices</h3>
+                        <p class="project-description">
+                            Developed a regression model to predict house prices based on various features,
+                            providing an affordable solution for real estate agencies.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-chart-line"></i> RMSE = 3000</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project2" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: NLP Sentiment Analysis -->
+                <div class="project-card" data-category="nlp">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-comments fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sentiment Analysis System</h3>
+                        <p class="project-description">
+                            Implemented a sentiment analysis model using transformers to classify customer
+                            reviews with high accuracy across multiple categories.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">BERT</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-chart-line"></i> 92% F1-Score</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Model Deployment -->
+                <div class="project-card" data-category="deployment">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-server fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ML Model API Deployment</h3>
+                        <p class="project-description">
+                            Deployed a machine learning model as a REST API using Flask and Docker,
+                            with automated CI/CD pipeline for continuous deployment.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-clock"></i> &lt;100ms Response Time</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project4" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Reinforcement Learning -->
+                <div class="project-card" data-category="dl">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Reinforcement Learning Agent</h3>
+                        <p class="project-description">
+                            Trained an RL agent using Deep Q-Learning to play Atari games,
+                            achieving superhuman performance on several titles.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenAI Gym</span>
+                            <span class="tech-tag">DQN</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-trophy"></i> Top 5% Score</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project5" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Computer Vision -->
+                <div class="project-card" data-category="dl">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Object Detection System</h3>
+                        <p class="project-description">
+                            Implemented a real-time object detection system using YOLO architecture
+                            for autonomous vehicle applications.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-tachometer-alt"></i> 30 FPS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project6" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>your.email@example.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-method">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" class="contact-method">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sasaank Aalla. All rights reserved.</p>
+            <p>Built with passion for AI Engineering</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
